@@ -74,7 +74,8 @@ const main = async () => {
   const markdown = generateMarkdown(bookmarks);
   await uploadToDropbox(markdown);
   console.log("Bookmarks updated");
-  process.exit(0);
 };
 
-main();
+exports.handler = () => {
+  main();
+};
