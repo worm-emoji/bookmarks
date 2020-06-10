@@ -44,7 +44,9 @@ Title: bookmarks
 Page: Yes
 Permalink: /bookmarks
 
-This page is an ocassionally updated collection of my personal bookmarks.
+# Bookmarks
+
+This page is an ocassionally updated collection of my personal bookmarks. [_(How this page works)_](/blog/publishing-my-bookmarks)
 
 ${bookmarks.map(generateBookmark).join("\n\n")}
     `.trim();
