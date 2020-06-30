@@ -45,10 +45,17 @@ const generateBookmark = ({ href, description, time }, index) => {
     bookmark += "\n\n";
   }
 
-  const day = moment(time).format("MMMM Do");
-
   const host = new URL(href).hostname.replace("www.", "");
-  bookmark += `<span class="bookmark">[${description}](${href}) <span class="hostname">${host}</span> <span class="bookmark-day">${day}</span></span>`;
+
+  let day = moment(time).format("MMMM Do");
+  let dayClass = "bookmark-day";
+
+  if (moment(time).isAfter(moment().subtract(12, "hours"))) {
+    dayClass += " bookmark-day-recent";
+    day = moment(time).fromNow();
+  }
+
+  bookmark += `<span class="bookmark">[${description}](${href}) <span class="hostname">${host}</span> <span class="${dayClass}">${day}</span></span>`;
   return bookmark;
 };
 
