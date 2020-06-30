@@ -45,8 +45,10 @@ const generateBookmark = ({ href, description, time }, index) => {
     bookmark += "\n\n";
   }
 
+  const day = moment(time).format("MMMM Do");
+
   const host = new URL(href).hostname.replace("www.", "");
-  bookmark += `[${description}](${href}) <span class="hostname">${host}</span>`;
+  bookmark += `<span class="bookmark">[${description}](${href}) <span class="hostname">${host}</span> <span class="bookmark-day">${day}</span></span>`;
   return bookmark;
 };
 
