@@ -9,10 +9,22 @@ const pinboardOptions = qs.stringify({
   format: "json",
 });
 
+let bookmarks = null;
+
 const getBookmarks = async () => {
   const req = await axios({
     url: `https://api.pinboard.in/v1/posts/all?${pinboardOptions}`,
   });
+
+  if (typeof req.data === "string") {
+    // So for some reason, Pinboard is sending empty width space characters
+    // which is messing with the JSON parser. This strips them and parses
+    // the JSON.
+    const json = JSON.parse(req.data.replace(/[\u200B-\u200D\uFEFF]/g, ""));
+    return json;
+  }
+
+  // If Pinboard fixes their API, this codepath should work like normal again.
   return req.data;
 };
 
@@ -50,8 +62,6 @@ This page is an ocassionally updated collection of my personal bookmarks. [_(How
 
 ${bookmarks.map(generateBookmark).join("\n\n")}
     `.trim();
-
-let bookmarks = null;
 
 const uploadToDropbox = (markdown) => {
   return axios({
