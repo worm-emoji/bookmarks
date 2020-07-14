@@ -67,7 +67,7 @@ Permalink: /bookmarks
 
 # Bookmarks
 
-This page is an ocassionally updated collection of my personal bookmarks. [_(How this page works)_](/blog/publishing-my-bookmarks)
+This page is an [occasionally updated collection](/blog/publishing-my-bookmarks) of my personal bookmarks.
 
 ${bookmarks.map(generateBookmark).join("\n\n")}
     `.trim();
