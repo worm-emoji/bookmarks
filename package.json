@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
+    "lodash": "^4.17.20",
     "moment": "^2.26.0",
     "qs": "^6.9.4"
   }
