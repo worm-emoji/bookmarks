@@ -139,7 +139,7 @@ ${bookmarkHTML.join("\n")}
 
 * I share my screenshots at [luke.cat][8]
 * Every time I spend money, [a bot tweets it][9]
-* I’m working on a journaling app for iOS called “posting!”, due for release by the end of 2020
+* I’m working on a journaling app for iOS called [“posting!”](https://posting.app), due for release by the end of 2020
 
 
 [1]:	https://www.gq.com/story/restocks-app-luke-miles
