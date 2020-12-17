@@ -114,7 +114,7 @@ Summary: My name is luke miles and I'm a software engineer based in San Francisc
 
 My name is luke miles and I'm based in San Francisco. 
 
-Professionally, I'm a software engineer. In the past, I've [started a company][1] (now defunct), worked at [Stripe][2] on new products, and freelanced for a little bit. I currently work at [byte][3].
+Professionally, I'm a software engineer. In the past, I've [started a company][1] (now defunct), worked at [Stripe][2] on new products, and freelanced for a little bit.
 
 You can find me on [GitHub][4], [Twitter][5], and [byte][6]. If you'd like to get in touch 
 with me, please email me at [hello@lukemil.es][7] and I'll try to respond.
