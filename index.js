@@ -112,11 +112,11 @@ Menu: No
 Permalink: /
 Summary: My name is luke miles and I'm a software engineer based in San Francisco. 
 
-My name is luke miles and I'm based in San Francisco. 
+My name is luke miles and I'm based in San Francisco.
 
-Professionally, I'm a software engineer. In the past, I've [started a company][1] (now defunct), worked at [Stripe][2] on new products, and freelanced for a little bit.
+Professionally, I'm a software engineer and the co-founder of [Context](https://context.app). In the past, I've [started another company][1], worked at [Stripe][2] on new products, and freelanced for a little bit.
 
-You can find me on [GitHub][4], [Twitter][5], and [byte][6]. If you'd like to get in touch 
+You can find me on [GitHub][4] and [Twitter][5]. If you'd like to get in touch 
 with me, please email me at [hello@lukemil.es][7] and I'll try to respond.
 
 <div class="show">
@@ -135,22 +135,13 @@ ${bookmarkHTML.join("\n")}
 </div>
 </div>
 
-## Other publishing
-
-* I share my screenshots at [luke.cat][8]
-* Every time I spend money, [a bot tweets it][9]
-* I’m working on a journaling app for iOS called [“posting!”](https://posting.app), due for release by the end of 2020
-
-
 [1]:	https://www.gq.com/story/restocks-app-luke-miles
 [2]:	https://stripe.com
 [3]:	https://byte.co
 [4]:	https://github.com/ylukem
-[5]:	https://twitter.com/ylukem
-[6]:	https://byte.co/@luke
+[5]:	https://twitter.com/worm_emoji
 [7]:	mailto:hello@lukemil.es
 [8]:	https://luke.cat
-[9]:	/ch
 `;
 };
 
