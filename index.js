@@ -120,12 +120,6 @@ You can find me on [GitHub][4] and [Twitter][5]. If you'd like to get in touch
 with me, please email me at [hello@lukemil.es][7] and I'll try to respond.
 
 <div class="show">
-<div class="s-half">
-## Writing
-${postHTML.join("\n")}
-
-[More →](/page/1)
-</div>
 
 <div class="s-half">
 ## Bookmarks
